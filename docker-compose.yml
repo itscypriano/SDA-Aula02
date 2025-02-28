@@ -5,7 +5,7 @@ services:
     container_name: mysql_container
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: minhaSenha123
-      MYSQL_DATABASE: meubanco
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}meubanco
     ports:
       - "3306:3306"
